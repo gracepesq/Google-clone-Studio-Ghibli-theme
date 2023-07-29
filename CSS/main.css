@@ -1,0 +1,283 @@
+body{
+    background-image: url(/images/studio\ ghibli\ wallpaper1.jpeg);
+    /*Margen predeterminado */
+    margin: 0;
+    /*Margen para dentro*/
+    padding: 0;
+    /* Tamaño de texto */
+    font-size: 13px;
+    /*fuente del texto*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*************************************************/
+/********************************************/
+/***********************************/
+/* Navegación */
+
+header{
+    background-color: transparent;
+    width: 100%;
+    height: 55px;
+}
+
+header nav{
+    background-color: transparent;
+    /* como se puede mover el elemento */
+    display:flex;
+    justify-content:flex-end ;
+}
+header nav .nav-right-section{
+    /*eliminar viñetas*/
+    list-style: none;
+    width: 250px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* Altura automática*/
+    height:auto;
+}
+
+nav .nav-right-section a{
+    /*color del texto*/
+    color:rgb(255, 255, 255);
+    /* linea debajo de */
+    text-decoration: none;
+    /* margen derecho */
+    margin-right: 15px ;
+
+}
+nav .nav-right-section .menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 20px;
+    height: 20px;
+    /*contiene la imagen */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+nav .nav-right-section img{
+    /* Margin left = Msrgen a la izquierda solamente */
+    margin-left: 20px;
+    /* Redondear */
+    border-radius: 100px;
+    /*width = anchura */
+    width: 35px;
+}
+
+/*************************************************/
+/********************************************/
+/***********************************/
+/* Main */
+
+main{
+    text-align: center;
+    margin-top: 100px;
+}
+/*Sección logo*/
+main .main-logo{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+/*Logo google */
+main .main-logo img{
+    position: static;
+    width: 250px;
+    height: 190px;
+}
+
+/*Sección input*/
+main .main-input{
+    /*Width = Anchura */
+    width: 530px;
+    /*Margin 0 auto = que se vuelva a centrar*/
+    margin: 0 auto;
+    /*Separar input de botones*/
+    margin-bottom: 40px;
+}
+/* Cajita gris redondeada buscador*/
+main .main-input-container{
+    background-color: #f0f0f1;
+    /*border, ancho de linea, estilo, color*/
+    border: 1px solid #dfe1e5;
+    /*bordes redondeados */
+    border-radius: 30px;
+    width: 525px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:static;
+}
+
+main .main-input input{
+    height: 40px;
+    width: 430px;
+    /*Quitar borde negro*/
+    border: none;
+    /* Quitar borde azul al hacer clic*/
+    outline: transparent;
+}
+
+main .main-input .search-icon{
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-position: center;
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    padding-left: 5%;
+    background-repeat: no-repeat;
+
+}
+
+main .main-input .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    width: 17px;
+    height: 17px;
+    /* Icono contenido en el espacio*/
+    background-size: contain;
+    background-position: center;
+    padding-left: 1%;
+    background-repeat: no-repeat;
+} 
+
+main .main-input .cam-icon{
+    background-image: url(https://lh3.googleusercontent.com/H65Hxq0ooUCcwhoRGU-fwoXqrGS58mwa2vtr2ZfhGgJzMU0uYybOrZVBs8jydtR22TRC1k9XwDMD2xHB5BBU4IyXW7oH8PyCsq46uX6A42CmXP5GDZ2d);
+    width: 17px;
+    height: 17px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /*padding = se le agrega un espacio entre ambos simbolos(se separen)*/
+    padding-right: 4%;
+}
+
+main .main-buttons{
+    background-color: none;
+    width: 550px;
+    /*Equilibrio entre los margendes entre la derecha e izquierda*/
+    margin: 0 auto;
+}
+
+main .main-buttons div{
+    /*Alinear elementos en la misma linea*/
+    display: inline-block;
+}
+main .main-buttons button{
+    border: 0;
+    height: 20px;
+    background-color: #78b970;
+    font-size: 14px;
+    color: #000000;
+    border-radius: 4px;
+    margin-right: 20px;
+    padding: 0 15px;
+}
+/*Hover = Nos permite agregarle diseño al cursos sobre un elemento*/
+main .main-input-container:hover{
+    box-shadow: 0 0 5px #2c930047;
+    cursor: pointer;
+}
+
+main .main-buttons button:hover{
+    color:#202124; 
+    /*ancho de linea - estilo de linea - color */
+    border: 1px solid #000000;
+    /*sombra de botón*/
+    box-shadow:  0 0 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 12px;
+    background-color: #78b970;
+    border-top: 1px solid #22450a;
+}
+
+footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left:0;
+}
+
+.footer-left {
+    justify-self: left;
+}
+
+.footer-right {
+    justify-self: right;
+}
+
+footer ul li a {
+    text-decoration: none;
+    margin: 10px;
+    color: #000000;
+}
+
+footer a:hover{
+    text-decoration:underline;
+
+}
+
+/* Reset default styles for select elements */
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    border: none;
+    font-size: 12px;
+    color: #000000;
+    width: 80%; /* Set the width of the dropdown to 100% of its container */
+    max-width: 300px; /* Set a maximum width for the dropdown */
+}
+
+
+  /* Style the dropdown container */
+.dropdown {
+    display: inline-block; /* Display the dropdown inline with other elements */
+    position: relative;
+    border: 1px solid #78b970;
+    border-radius: 0px;
+    overflow: hidden;
+}
+
+
+  /* Style the dropdown arrow */
+.dropdown::after {
+    content: "\25BC"; /* Downward pointing triangle (black ▼) */
+    position: absolute;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 10px;
+    color: #78b970;
+    pointer-events: none; /* Avoids interfering with select functionality */
+    top: 50%;
+}
+
+  /* Estilizar las opciones del dropdown */
+#dropdownMenu {
+    cursor: pointer;
+    padding-right: 25px; /* Add padding to avoid overlapping the arrow */
+    background-color: #78b970; /* Background color of the dropdown */
+}
+
+  /* Estilizar las opciones del dropdown cuando estan en hover */
+#dropdownMenu option:hover {
+    background-color: #78b970;
+}
+
+  /* Estilizar la opción seleccionada */
+#dropdownMenu option:checked {
+    background-color: #78b970; /* Change background color when selected */
+}
+
+
+
